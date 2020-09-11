@@ -1,5 +1,5 @@
-#Shop Reservation
-Version 1.0 11-09-2020
+# Shop Reservation
+Version 1.0 11-09-2020</br>
 
 * A web application that allows a customer to book a reservation to a shop near his pincode.
 * The portal also allows a seller / shopkeeper to register his shop on the portal, he can then see his shop reservations on the portal.
@@ -14,7 +14,7 @@ Version 1.0 11-09-2020
 4. The web application also uses the CS50 library thus installing that is required to run the application outside the CS50 IDE
 ------------------------------------------------------------------------
 
-To install or read more about [CS50 Library] (https://cs50.readthedocs.io/libraries/cs50/c/).  
+To install or read more about [CS50 Library](https://cs50.readthedocs.io/libraries/cs50/python)
 
 -------------------------------------------------------------------------
 To run the application with CS50 library already installed:
