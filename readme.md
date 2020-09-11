@@ -14,6 +14,9 @@ Version 1.0 11-09-2020
 4. The web application also uses the CS50 library thus installing that is required to run the application outside the CS50 IDE
 ------------------------------------------------------------------------
 
+To install or read more about [CS50 Library] (https://cs50.readthedocs.io/libraries/cs50/c/).  
+
+-------------------------------------------------------------------------
 To run the application with CS50 library already installed:
 
 ``` Python
