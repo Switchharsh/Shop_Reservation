@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    You have no booking for today
+{% endblock %}
+
+{% block main %}
+    <form action="/" method="get">
+    <h2> You have no reservations for today</h2>
+    <a class="nav-link" href="/reserve">Click here to Reserve a shop</a>
+    <a class="nav-link" href="/shop_reservation">An owner? see your shop reservations here!</a>
+
+{% endblock %}

@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Reserve
+{% endblock %}
+
+{% block main %}
+    <form action="/reserve" method="post">
+        <div>
+        <input autocomplete="off" autofocus class="form-control" name="pin" placeholder="Pin Code/ Postal Code">
+        </div>
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+{% endblock %}

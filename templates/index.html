@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Your Reservations for Today
+{% endblock %}
+
+{% block main %}
+    <form action="/" method="get">
+    <h4>You have the following reservations set for today</h4>
+    <table class="table table-striped">
+        <tr>
+            <th> Name </th>
+            <th> Address</th>
+            <th> Time </th>
+        </tr>
+        {% for shop in shops %}
+                <tr>
+                    <td>{{ shop.name }}</td>
+                    <td>{{ shop.address }}</td>
+                    <td>{{ shop.time }}</td>
+                </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

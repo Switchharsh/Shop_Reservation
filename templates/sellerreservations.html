@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Your  Shop Reservations for Today
+{% endblock %}
+
+{% block main %}
+    <form action="/shop_reservation" method="get">
+        <div>
+        {% for shop in seller %}
+            <h6> Name : {{ shop.name }} </h6>
+            <h6> Address : {{ shop.address }}</h6>
+            <h6> PIN Code/ Postal Code : {{ shop.pin }} </h6>
+        {% endfor %}
+        </div>
+
+    <h4>Your shop has the following reservations set for today</h4>
+
+    <table class="table table-striped">
+        <tr>
+
+            <th> Time </th>
+        </tr>
+        {% for customer in customers %}
+                <tr>
+
+                    <td>{{ customer.time }}</td>
+                </tr>
+        {% endfor %}
+    </table>
+{% endblock %}

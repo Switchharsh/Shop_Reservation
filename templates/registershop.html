@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register Your Store
+{% endblock %}
+
+{% block main %}
+    <form action="/registershop" method="post">
+        <h3>You can only register one shop from one ID</h3>
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="name" placeholder="Name of Shop" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="pin" placeholder="PIN Code/ Postal Code of your shop" style="text-transform:uppercase;" type="text">
+        </div>
+        <div class="form-group">
+            <input class="form-control" name="address" placeholder="Address of Your Shop" type="text">
+        </div>
+
+        <button class="btn btn-primary" type="submit">Register My Shop!</button>
+    </form>
+{% endblock %}

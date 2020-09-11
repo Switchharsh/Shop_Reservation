@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search for a store using PIN code/Postal Code
+{% endblock %}
+
+{% block main %}
+    <form action="/search" method="get">
+    <table class="table table-striped">
+        <tr>
+            <th> Name </th>
+            <th> Address </th>
+            <th> Pin Code/ Postal Code</th>
+        </tr>
+        {% for shop in store %}
+                <tr>
+                    <td>{{ shop.name }}</td>
+                    <td>{{ shop.address }}</td>
+                    <td>{{ shop.pin }}</td>
+                </tr>
+        {% endfor %}
+{% endblock %}

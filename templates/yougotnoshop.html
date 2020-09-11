@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    No shop registered
+{% endblock %}
+
+{% block main %}
+    <form action="/shop_reservation" method="get">
+    <h2> You have not registered any shop yet</h2>
+    <a class="nav-link" href="/registershop">Got a shop? Register Now!</a>
+    {% endblock %}

@@ -1,0 +1,23 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    All the shops registered on the portal
+{% endblock %}
+
+{% block main %}
+    <form action="/shops" method="get">
+        <h4>All the shops registered on the portal</h4>
+    <table class="table table-striped">
+        <tr>
+            <th> Name </th>
+            <th> Address </th>
+            <th> Pin Code/ Postal Code</th>
+        </tr>
+        {% for shop in allshops %}
+                <tr>
+                    <td>{{ shop.name }}</td>
+                    <td>{{ shop.address }}</td>
+                    <td>{{ shop.pin }}</td>
+                </tr>
+        {% endfor %}
+{% endblock %}

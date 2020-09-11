@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Search for a store using PIN code/Postal Code
+{% endblock %}
+
+{% block main %}
+    <form action="/search" method="post">
+        <div class="form-group">
+            <input autocomplete="off" autofocus class="form-control" name="pincode" placeholder="PIN Code/ Postal Code" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+{% endblock %}

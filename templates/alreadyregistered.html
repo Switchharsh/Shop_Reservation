@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    You have already registeres a shop from this ID
+{% endblock %}
+
+{% block main %}
+    <form action="/registershop" method="get">
+    <h2> You have already registeres a shop from this ID, you can only register one shop from one ID</h2>
+    <a class="nav-link" href="/shop_reservation">An owner? see your shop reservations here!</a>
+    {% endblock %}
